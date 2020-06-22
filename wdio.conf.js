@@ -20,6 +20,7 @@ exports.config = {
     specs: ["./test/specs/**/*.js"],
     // Patterns to exclude.
     exclude: [
+        "./test/specs/loginAmazon.spec.js",
         // 'path/to/excluded/files'
     ],
     //
@@ -51,11 +52,14 @@ exports.config = {
             // 5 instances get started at a time.
             maxInstances: 1,
             platformName: "Android",
-            browserName: "chrome",
+            // browserName: "chrome",
             platformVersion: "8",
             deviceName: "V3XDU18320001244",
             automationName: "UiAutomator2",
-            // "appium:newCommandTimeout": 240,
+            app: "./app/amazon.apk",
+            appWaitActivity:
+                "com.amazon.mShop.startup.StartupLocalizationSelectionMigrationActivity",
+            appWaitPackage: "com.amazon.mShop.android.shopping",
             // If outputDir is provided WebdriverIO can capture driver session logs
             // it is possible to configure which logTypes to include/exclude.
             // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
