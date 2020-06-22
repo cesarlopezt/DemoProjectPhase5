@@ -4,7 +4,7 @@
     "description": "Appium and WDIO to automate Amazon login",
     "main": "index.js",
     "scripts": {
-        "test": "mocha Test/Specs/ --timeout 50000"
+        "test": "npx wdio wdio.conf.js"
     },
     "repository": {
         "type": "git",
