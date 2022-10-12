@@ -18,7 +18,7 @@
     },
     "homepage": "https://github.com/calt08/DemoProjectPhase5#readme",
     "dependencies": {
-        "appium": "^1.17.1",
+        "appium": "^1.22.3",
         "chai": "^4.2.0",
         "webdriverio": "^6.1.17"
     },
